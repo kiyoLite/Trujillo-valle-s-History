@@ -4,3 +4,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.Responsive {
+    max-width: 1000px;
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 100%;
+}
