@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: rgb(255, 255, 255);
 }
@@ -41,6 +45,10 @@ body {
     cursor: pointer;
 }
 
+#ListSections>li>a {
+    text-decoration: none;
+}
+
 #Banner {
     text-align: center;
     padding: 40px;
@@ -52,9 +60,12 @@ body {
 
 /*==== Main ====*/
 
+
+
 main section {
     margin: 0 0 40px 0;
     font-family: lato;
+    scroll-margin-top: 10px;
 }
 
 section h2 {
