@@ -53,7 +53,7 @@ body {
 #NavSections::before {
     content: "";
     position: absolute;
-    background-color: #2b2b2b;
+    background-color: #252525;
     width: 30px;
     height: 2px;
 }
@@ -77,13 +77,12 @@ body {
 }
 
 #ListSections>li :hover {
-    color: #ece9e9;
+    color: #dddddd;
 
 }
 
 #ListSections>li :active {
-    font-size: 20px;
-    color: #ff0000;
+    font-size: 15px;
 }
 
 #ListSections>li>a {
