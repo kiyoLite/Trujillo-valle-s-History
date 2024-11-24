@@ -6,11 +6,18 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth;   */
+    color: white;
+}
+
+:root {
+
+    --section-divisor-color: #f8e800;
 }
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: #262626;
+    background-color: #1d1d1d;
 }
 
 .Responsive {
@@ -27,10 +34,11 @@ body {
 
 /* ==== header ==== */
 
+
 #NavSections {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    margin: 30px 0;
 
 }
 
@@ -47,16 +55,56 @@ body {
 
 #ListSections>li>a {
     text-decoration: none;
+    color: white;
 }
 
 #Banner {
     text-align: center;
-    padding: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 20px;
+    padding: 20px 0;
+    height: 150px;
+    background: url(images/colombia_violencia_armada_antiioquia_foto_h13n.jpg_1718483347.jpg) no-repeat center center/cover;
+    position: relative;
+    filter: grayscale();
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+#Banner::before,
+#Banner::after {
+    background: linear-gradient(to right, #1d1d1d 0%, #1d1d1d00 100%);
+    height: 100%;
+    width: 15%;
+    content: '';
+    z-index: 2;
+    position: absolute;
+    top: 0;
+
+}
+
+#Banner::before {
+    left: 0;
+}
+
+#Banner::after {
+    right: -1px;
+    transform: rotateZ(180deg);
+    top: 0
+}
+
+
+#Banner p {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    border-radius: 20px;
+    display: inline;
+    color: rgb(255, 255, 255);
+    padding: 2px 5px;
+
+
+}
 
 /*==== Main ====*/
 
@@ -65,26 +113,71 @@ body {
 main section {
     margin: 0 0 40px 0;
     font-family: lato;
-    scroll-margin-top: 10px;
+    /* scroll-margin-top: 10px;  */
 }
 
-section h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
-    position: relative;
+.subTitle {
     width: 100%;
-    margin: 25px 0;
+    margin: 20px 0;
+    position: relative;
 }
+
+.subTitle::before {
+    content: "";
+    background-color: var(--section-divisor-color);
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+}
+
+
+.subTitle h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: var(--section-divisor-color);
+    border-radius: 10px;
+    display: inline;
+    color: black;
+    padding: 2px 5px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+
+#Context .subTitle {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#Testimonials .subTitle {
+    display: flex;
+    justify-content: center;
+}
+
+#PresentTime .subTitle {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
 
 #Container1 img {
     object-fit: cover;
     aspect-ratio: 10/7;
     object-position: 0 -50px;
+    background-attachment: black;
+    filter: grayscale(40%);
+
 }
 
 #Container3 img {
     object-fit: cover;
     aspect-ratio: 10/7;
+    background-attachment: black;
+    filter: grayscale(40%);
 }
 
 #Container1,
@@ -103,6 +196,7 @@ section h2 {
 #Container4 iframe {
     width: 100%;
     height: 350px;
+    background-color: black;
 }
 
 #FixSlider {
