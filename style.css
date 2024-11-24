@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(255, 255, 255);
+}
+
 .Responsive {
     max-width: 1000px;
     padding: 0 20px;
@@ -40,7 +44,61 @@
 #Banner {
     text-align: center;
     padding: 40px;
-    font-family: lato, Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
     font-size: 20px;
-    background-color: antiquewhite;
+}
+
+
+/*==== Main ====*/
+
+main section {
+    margin: 0 0 40px 0;
+    font-family: lato;
+}
+
+section h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    margin: 25px 0;
+}
+
+#Container1,
+#Container3,
+#Container4,
+#Container2,
+#Container5 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin: 0 0 40px 0;
+}
+
+
+#Container3 iframe {
+    width: 100%;
+    height: 250px;
+}
+
+#FixSlider {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0 0 20px 0;
+}
+
+#ContainerSliderImage {
+    display: flex;
+}
+
+
+#ContainerSliderImage img {
+    width: 200px;
+    height: 200px;
+    margin: 0 20px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
 }
