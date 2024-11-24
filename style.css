@@ -37,6 +37,7 @@ body {
 
 #NavSections {
     margin: 30px 0;
+    position: relative;
 }
 
 #ListSections {
@@ -48,13 +49,47 @@ body {
     margin: auto;
 }
 
+#NavSections::after,
+#NavSections::before {
+    content: "";
+    position: absolute;
+    background-color: #2b2b2b;
+    width: 30px;
+    height: 2px;
+}
+
+#NavSections::after {
+    top: 0;
+    left: 0;
+    transform: rotateZ(-45deg);
+}
+
+#NavSections::before {
+    bottom: 0;
+    right: 0;
+    transform: rotateZ(-45deg);
+}
+
+
+
 #ListSections>li {
     cursor: pointer;
 }
 
+#ListSections>li :hover {
+    color: #ece9e9;
+
+}
+
+#ListSections>li :active {
+    font-size: 20px;
+    color: #ff0000;
+}
+
 #ListSections>li>a {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
+
 }
 
 #Banner {
