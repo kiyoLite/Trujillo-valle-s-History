@@ -228,8 +228,11 @@ footer {
 
     font-family: lato, Arial, Helvetica, sans-serif;
     display: flex;
-    gap: 10px;
-    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer h3 {
+    width: 100%;
 }
 
 footer ul {
@@ -237,10 +240,14 @@ footer ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    text-wrap: nowrap;
+    flex-wrap: wrap;
+
 }
 
 footer ul a {
     text-decoration: none;
+    color: #197a37;
 }
 
 /* ====keyframes==== */
@@ -255,7 +262,6 @@ footer ul a {
 }
 
 @media (min-width:730px) {
-    body {}
 
     #Container1,
     #Container3 {
