@@ -6,7 +6,7 @@
 }
 
 html {
-    /* scroll-behavior: smooth;   */
+    scroll-behavior: smooth;
     color: white;
 }
 
@@ -265,7 +265,7 @@ main section {
 #ContainerSliderImage {
     width: fit-content;
     display: flex;
-    animation: scroll 20s linear infinite;
+    animation: scroll 25s linear infinite;
     justify-content: center;
     align-items: center;
 }
